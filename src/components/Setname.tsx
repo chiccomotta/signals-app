@@ -2,8 +2,8 @@ import name from "../signals/name"
 
 export const Setname = () => {
   function update() {
-    const r = generateString(15)
-    const l = generateString(15)
+    const r = generateString(5)
+    const l = generateString(5)
 
     name.value = { name: r, surname: l }
   }
