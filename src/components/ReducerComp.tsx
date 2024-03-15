@@ -17,7 +17,8 @@ const ReducerComp = () => {
   }
 
   const action = {
-    type: "inc",
+    type: "add_custom",
+    number: 2,
   }
 
   const [state, dispatch] = useReducer(reducer, initialState)
@@ -28,7 +29,7 @@ const ReducerComp = () => {
       <br />
       <div>
         <button style={{ color: "blue", borderColor: "black" }} onClick={() => dispatch(action)}>
-          Increment
+          Increment + 2
         </button>
       </div>
     </>
