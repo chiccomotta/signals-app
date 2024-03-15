@@ -1,0 +1,57 @@
+{
+  "root": true,
+  "extends": [
+    "prettier",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:typescript-sort-keys/recommended"
+  ],
+  "parser": "@typescript-eslint/parser",
+  "plugins": ["@typescript-eslint", "react", "react-hooks", "sort-destructure-keys", "sort-keys-fix", "simple-import-sort"],
+  "rules": {
+    "react/react-in-jsx-scope": "off",
+    "react-hooks/rules-of-hooks": "error",
+    "react-hooks/exhaustive-deps": "warn",
+    "@typescript-eslint/no-non-null-assertion": "off",
+    "@typescript-eslint/ban-ts-comment": "off",
+    "@typescript-eslint/no-explicit-any": "off",
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "@typescript-eslint/no-empty-interface": "off",
+    "@typescript-eslint/no-unused-vars": "off",
+    "import/named": "off",
+    "import/no-unresolved": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "jsx-a11y/no-onchange": "off",
+    "jsx-quotes": ["error", "prefer-double"],
+    "no-shadow": "off",
+    "no-unused-vars": "off",
+    "prefer-template": "error",
+    "quotes": ["error", "double", { "avoidEscape": true }],
+    "react/destructuring-assignment": "error",
+    "react/jsx-boolean-value": "error",
+    "react/jsx-key": "error",
+    "react/jsx-no-bind": "off",
+    "react/jsx-sort-props": "error",
+    "react/prop-types": "off",
+    "react/self-closing-comp": ["error", { "component": true, "html": false }],
+    "simple-import-sort/exports": "error",
+    "simple-import-sort/imports": "error",
+    "sort-destructure-keys/sort-destructure-keys": "error",
+    "sort-keys-fix/sort-keys-fix": "error",
+    "sort-vars": "error"
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  },
+  "env": {
+    "browser": true,
+    "node": true
+  },
+  "globals": {
+    "JSX": true
+  }
+}

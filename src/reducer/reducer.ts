@@ -1,6 +1,6 @@
 import { IAction, IInitialState } from "../components/ReducerComp"
 
-export const reducer = (state: IInitialState, action: IAction) => {
+export const reducer = (state: IInitialState, action: any) => {
   let newState
   switch (action.type) {
     case "inc":
